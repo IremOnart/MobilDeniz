@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="FirstProject" customModuleProvider="target">
+            <connections>
+                <outlet property="bireysel" destination="KBN-WI-kvi" id="RkL-AB-KxJ"/>
+                <outlet property="kurumsalLabel" destination="KjI-Wp-ODM" id="F7Y-eL-7BW"/>
+                <outlet property="loginButton" destination="xnf-nn-vNj" id="x6V-S2-3Al"/>
+                <outlet property="name" destination="BWI-AS-mhL" id="MAJ-6b-5k9"/>
+                <outlet property="topNavigation" destination="tPd-pe-yZL" id="Gty-9a-4I7"/>
+                <outlet property="userChanged" destination="nyJ-aq-YuL" id="2lU-27-ND4"/>
+                <outlet property="view" destination="oNe-cl-cpN" id="u0N-kz-jWn"/>
+                <outlet property="wellcome" destination="aM9-RI-N93" id="35T-g0-HO5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oNe-cl-cpN">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" translatesAutoresizingMaskIntoConstraints="NO" id="t26-As-Ek1">
+                    <rect key="frame" x="261" y="89" width="44" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="EYV-2K-hl3"/>
+                        <constraint firstAttribute="width" constant="44" id="QSp-DH-WoH"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topNavigation" translatesAutoresizingMaskIntoConstraints="NO" id="tPd-pe-yZL">
+                    <rect key="frame" x="16" y="79" width="172" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="J5N-xd-b3m"/>
+                        <constraint firstAttribute="width" constant="172" id="q3j-kA-AEh"/>
+                        <constraint firstAttribute="width" secondItem="tPd-pe-yZL" secondAttribute="height" multiplier="172:53" id="rRI-OZ-mN3"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="BYL-Kb-z5B">
+                    <rect key="frame" x="174" y="266.33333333333331" width="178" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Hoş Geldiniz!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM9-RI-N93">
+                            <rect key="frame" x="0.0" y="0.0" width="112" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" systemColor="systemGray6Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kaan Halill Baranoğlu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWI-AS-mhL">
+                            <rect key="frame" x="0.0" y="25" width="178" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" systemColor="systemGray6Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="VRr-jn-h3n">
+                    <rect key="frame" x="78" y="171" width="237" height="24"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="BİREYSEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjI-Wp-ODM">
+                            <rect key="frame" x="0.0" y="0.0" width="87" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" systemColor="systemGray6Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KURUMSAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBN-WI-kvi">
+                            <rect key="frame" x="131" y="0.0" width="106" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" systemColor="systemGray6Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="STY-T2-Iwb">
+                    <rect key="frame" x="68" y="227.99999999999997" width="89" height="100.66666666666671"/>
+                    <color key="tintColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="STY-T2-Iwb" secondAttribute="height" multiplier="89:102" id="Jnv-46-Kb2"/>
+                        <constraint firstAttribute="width" constant="89" id="cAj-Bd-cBg"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="TrT-Hn-xxU">
+                    <rect key="frame" x="16" y="402.66666666666669" width="361" height="136.66666666666669"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnf-nn-vNj">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="34.333333333333336"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="GİRİŞ YAPIN">
+                                <color key="baseForegroundColor" name="AccentColor"/>
+                                <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="loginClicked:" destination="-1" eventType="touchUpInside" id="wXa-LW-Wl9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyJ-aq-YuL">
+                            <rect key="frame" x="62" y="102.33333333333331" width="237" height="34.333333333333343"/>
+                            <color key="tintColor" systemColor="systemGray6Color"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Farklı Kullanıcı ile Giriş Yapın"/>
+                            <connections>
+                                <action selector="userChangeClicked:" destination="-1" eventType="touchUpInside" id="iWm-Tb-U2H"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xnf-nn-vNj" firstAttribute="leading" secondItem="TrT-Hn-xxU" secondAttribute="leading" id="zpc-mX-KdP"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yF2-0U-fnJ">
+                    <rect key="frame" x="45" y="531" width="75" height="34.333333333333258"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="4rd-lD-Tki">
+                    <rect key="frame" x="333" y="87" width="44" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="cfI-4p-k12"/>
+                        <constraint firstAttribute="height" constant="37" id="yfu-5u-f4g"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="HbH-TU-jvd"/>
+            <color key="backgroundColor" name="AccentColor"/>
+            <color key="tintColor" name="AccentColor"/>
+            <constraints>
+                <constraint firstItem="VRr-jn-h3n" firstAttribute="top" secondItem="tPd-pe-yZL" secondAttribute="bottom" constant="39" id="2VF-h5-fXM"/>
+                <constraint firstItem="TrT-Hn-xxU" firstAttribute="top" secondItem="BYL-Kb-z5B" secondAttribute="bottom" constant="88.329999999999998" id="3hA-Ou-PJ2"/>
+                <constraint firstItem="TrT-Hn-xxU" firstAttribute="leading" secondItem="HbH-TU-jvd" secondAttribute="leading" constant="16" id="DhO-Ac-2bW"/>
+                <constraint firstItem="HbH-TU-jvd" firstAttribute="trailing" secondItem="VRr-jn-h3n" secondAttribute="trailing" constant="78" id="O6C-N3-5fR"/>
+                <constraint firstItem="4rd-lD-Tki" firstAttribute="top" secondItem="HbH-TU-jvd" secondAttribute="top" constant="28" id="PE9-7L-g0Q"/>
+                <constraint firstItem="tPd-pe-yZL" firstAttribute="top" secondItem="HbH-TU-jvd" secondAttribute="top" constant="20" id="PVg-n9-3yF"/>
+                <constraint firstItem="tPd-pe-yZL" firstAttribute="leading" secondItem="HbH-TU-jvd" secondAttribute="leading" constant="16" id="QHo-VX-yBx"/>
+                <constraint firstItem="4rd-lD-Tki" firstAttribute="leading" secondItem="t26-As-Ek1" secondAttribute="trailing" constant="28" id="QNq-R3-57w"/>
+                <constraint firstItem="t26-As-Ek1" firstAttribute="leading" secondItem="tPd-pe-yZL" secondAttribute="trailing" constant="73" id="Uek-OE-bZ2"/>
+                <constraint firstItem="STY-T2-Iwb" firstAttribute="top" secondItem="VRr-jn-h3n" secondAttribute="bottom" constant="32" id="VwO-Vl-Ccb"/>
+                <constraint firstItem="HbH-TU-jvd" firstAttribute="trailing" secondItem="TrT-Hn-xxU" secondAttribute="trailing" constant="16" id="XUE-dQ-c84"/>
+                <constraint firstItem="t26-As-Ek1" firstAttribute="top" secondItem="HbH-TU-jvd" secondAttribute="top" constant="30" id="YC6-s5-9K0"/>
+                <constraint firstItem="BYL-Kb-z5B" firstAttribute="top" secondItem="VRr-jn-h3n" secondAttribute="bottom" constant="71.329999999999998" id="aKF-5o-JXd"/>
+                <constraint firstItem="HbH-TU-jvd" firstAttribute="trailing" secondItem="4rd-lD-Tki" secondAttribute="trailing" constant="16" id="hkh-0H-Dw3"/>
+                <constraint firstItem="HbH-TU-jvd" firstAttribute="trailing" secondItem="BYL-Kb-z5B" secondAttribute="trailing" constant="41" id="i9Z-ij-pcP"/>
+                <constraint firstItem="VRr-jn-h3n" firstAttribute="leading" secondItem="HbH-TU-jvd" secondAttribute="leading" constant="78" id="oDb-8w-ukZ"/>
+                <constraint firstItem="BYL-Kb-z5B" firstAttribute="leading" secondItem="STY-T2-Iwb" secondAttribute="trailing" constant="17" id="ofT-3D-K2e"/>
+                <constraint firstItem="STY-T2-Iwb" firstAttribute="leading" secondItem="HbH-TU-jvd" secondAttribute="leading" constant="68" id="vVI-XC-3Um"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="yF2-0U-fnJ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="37.404580152671755" y="-134.50704225352112"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat" width="24" height="24"/>
+        <image name="mail" width="24" height="24"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="topNavigation" width="115" height="26"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
